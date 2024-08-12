@@ -88,7 +88,7 @@ for (let i = 0; i < products.length; i++) {
 
 
 
-/*let users = [
+let users = [
     {name: 'vasya', age: 31, status: false},
     {name: 'petya', age: 30, status: true},
     {name: 'kolya', age: 29, status: true},
@@ -102,7 +102,7 @@ for (let i = 0; i < products.length; i++) {
     {name: 'max', age: 31, status: true}
 ];
 
-// Користувачі зі статусом true
+
 console.log("Користувачі зі статусом true:");
 for (let i = 0; i < users.length; i++) {
     if (users[i].status === true) {
@@ -110,7 +110,7 @@ for (let i = 0; i < users.length; i++) {
     }
 }
 
-// Користувачі зі статусом false
+
 console.log("Користувачі зі статусом false:");
 for (let i = 0; i < users.length; i++) {
     if (users[i].status === false) {
@@ -118,10 +118,10 @@ for (let i = 0; i < users.length; i++) {
     }
 }
 
-// Користувачі, які старші за 30 років
+
 console.log("Користувачі, які старші за 30 років:");
 for (let i = 0; i < users.length; i++) {
     if (users[i].age > 30) {
         console.log(users[i]);
     }
-}*/
+}
