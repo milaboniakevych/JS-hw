@@ -87,6 +87,7 @@ for (let i = 0; i < products.length; i++) {
 
 
 
+/*
 
 let users = [
     {name: 'vasya', age: 31, status: false},
@@ -125,3 +126,4 @@ for (let i = 0; i < users.length; i++) {
         console.log(users[i]);
     }
 }
+*/
