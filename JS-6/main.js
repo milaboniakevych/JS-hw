@@ -2,16 +2,17 @@
 Знайти та вивести довижину настипних стрінгових значень
 'hello world', 'lorem ipsum', 'javascript is cool'*/
 
-/*
-let arr =[];
+/*let arr =[];
 arr.push('hello world');
 arr.push('lorem ipsum');
 arr.push('javascript is cool');
 let number = arr.push();
 console.log(arr);
-console.log(number);
-*/
+console.log(number);*/
 
+
+/*let string = 'hello world';
+console.log(string.length);*/
 
 /*---------------------------------------------------------------*/
 
