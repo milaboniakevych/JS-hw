@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script>
+    /*В localStorage зберігаються масиви. Вам потрібно зробити функцію, які дістає потрібний вам масив з localStorage та додає в нього об'єкт
+    сигнатура функції -
+    addToLocalStorage(arrayName:string,objToAdd:any{}):void*/
+
+
+    function addToLocalStorage(arrayName, objToAdd) {
+        let array = JSON.parse(localStorage.getItem(arrayName));
+        if (!Array.isArray(array)) {
+            array = [];
+        }
+
+        if (typeof objToAdd === 'object' && objToAdd !== null) {
+            array.push(objToAdd);
+        }
+
+        localStorage.setItem(arrayName, JSON.stringify(array));
+    }
+
+    addToLocalStorage('sessionList', {});
+
+</script>
+</body>
+</html>

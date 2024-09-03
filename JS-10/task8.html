@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table id="table">
+
+</table>
+<form name="tableForm">
+  <input type="number" name="lines">
+  <input type="number" name="cells">
+  <input type="text" name="cellsContent">
+  <button>Click</button>
+</form>
+
+<script>
+  /*Створити 3 інпута та кнопку. Один визначає кількість рядків, другий - кількість ячеєк, третій вмиіст ячеєк.
+          При натисканні кнопки, вся ця інформація зчитується і формується табличка, з відповідним вмістом.*/
+  const table = document.getElementById('table');
+  const form = document.forms['tableForm'];
+
+
+  form.onsubmit = function (event) {
+    event.preventDefault();
+    const linesValue = +form.lines.value;
+    const cellsValue = +form.cells.value;
+    const cellsContent = form.cellsContent.value;
+    /*console.log(linesValue, cellsValue, cellsContent);*/
+
+  for (let i = 0; i < linesValue; i++) {
+      const tr = document.createElement('tr');
+      table.appendChild(tr);
+    for (let j = 0; j < cellsValue; j++) {
+      const td = document.createElement('td');
+      td.innerText = cellsContent;
+      tr.appendChild(td);
+    }
+
+  }
+  }
+
+</script>
+</body>
+</html>

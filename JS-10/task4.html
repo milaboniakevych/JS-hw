@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        div {
+            background-color: #c195d5;
+            height: 500px;
+            width: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<!--є сторінка, на якій є блок, я кому знаходиьтся цифра. написати код, який при кожному перезавантажені сторінки буде додавати до неї +1-->
+
+<div id="block">0</div>
+
+<script>
+
+    let number = +localStorage.getItem('number') || 0;
+    number += 1;
+    localStorage.setItem('number', number);
+    document.getElementById('block').innerText = number;
+
+
+</script>
+
+</body>
+</html>

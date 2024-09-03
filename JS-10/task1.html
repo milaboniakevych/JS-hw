@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+<p id="text">Click to hide this text</p>
+<button>Button</button>
+
+<script>
+
+  let button = document.getElementsByTagName('button') [0];
+  button.onclick = function () {
+    document.getElementById('text').remove();
+  }
+
+</script>
+</body>
+</html>
